@@ -57,8 +57,12 @@ namespace Code.Core.Pentagram
         {
             if (!other.TryGetComponent(out IngredientSpawnPointer ingredient))
                 return;
-            
-            IngredientSpawnPointer.Instance.PentagramExited();
+
+            if (Input.GetMouseButton(0))
+            {
+                Debug.Log("!!!!");
+                IngredientSpawnPointer.Instance.PentagramExited();
+            }
         }
 
         public void Summon()

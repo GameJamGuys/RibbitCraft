@@ -45,11 +45,14 @@ namespace Code.Core.Ingredients
             _isDragging = false;
             gameObject.SetActive(false);
 
+            Debug.Log("!!");
             if (_isInPentagram)
             {
+                Debug.Log("!");
                 var ingredient = Instantiate(_ingredientPrefab, transform.position, Quaternion.Euler(0, 0, Random.Range(0, 360)));
                 ingredient.Init(IngredientType);
                 PentagramData.AddIngredient(ingredient);
+                PentagramExited();
             }
         }
 
@@ -66,12 +69,14 @@ namespace Code.Core.Ingredients
 
         public void PentagramExited()
         {
-            _isInPentagram = true;
+            Debug.Log("Ex");
+            _isInPentagram = false;
         }
 
         public void PentagramEntered()
         {
-            _isInPentagram = false;
+            Debug.Log("En");
+            _isInPentagram = true;
         }
     }
 }
