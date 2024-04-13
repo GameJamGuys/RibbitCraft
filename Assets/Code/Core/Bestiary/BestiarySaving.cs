@@ -6,7 +6,6 @@ namespace Code.Core.Bestiary
 {
     public class BestiarySaving : MonoBehaviour
     {
-        
         [SerializeField] private List<FrogSOData> frogs = new List<FrogSOData>();
         [SerializeField] private List<Recipe> recipes = new List<Recipe>();
         private void Awake()
