@@ -7,6 +7,7 @@ namespace Code.Core.Pentagram
     public sealed class Pentagram : MonoBehaviour
     {
         [SerializeField] private Frog _frogPrefab;
+        [SerializeField] RecipesManager recipesManager;
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (!other.TryGetComponent(out IngredientSpawnPointer ingredient))
@@ -27,10 +28,16 @@ namespace Code.Core.Pentagram
         {
             if (!PentagramData.IsFull)
                 return;
-            
-            //FrogSOData frogData = ReciepeService.GetFrog(PentagramData.IngredientsList);
-            //var frogGO = Instantiate(_frogPrefab, transform.position, Quaternion.identity);
-            //frogGO.Init(frogData);
+            Recipe frogRecipe = null;
+            foreach (var recipe in recipesManager.Recipes)
+            {
+                frogRecipe = recipe.CheckIngredients(PentagramData.IngredientsList);
+                if (frogRecipe != null)
+                {
+                    Debug.Log("Create FROG " + frogRecipe.frogData.Name);
+                    break;
+                }
+            }
         }
     }
 }
