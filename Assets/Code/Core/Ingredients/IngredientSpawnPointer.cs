@@ -8,7 +8,7 @@ namespace Code.Core.Ingredients
 {
     public class IngredientSpawnPointer : MonoBehaviour
     {
-        [SerializeField] private Camera _camera;
+        private Camera _camera;
         [SerializeField] private SpriteRenderer _spriteRenderer;
         [SerializeField] private Ingredient _ingredientPrefab;
         public IngredientSOType IngredientType { get; private set; }
@@ -27,6 +27,8 @@ namespace Code.Core.Ingredients
             {
                 Destroy(gameObject);
             }
+
+            _camera = Camera.main;
         }
 
         public void StartDrag(IngredientSOType ingredient)
