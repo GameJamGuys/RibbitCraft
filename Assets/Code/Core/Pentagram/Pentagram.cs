@@ -1,5 +1,6 @@
 using Code.Core.Frogs;
 using Code.Core.Ingredients;
+using Unity.Mathematics;
 using UnityEngine;
 
 namespace Code.Core.Pentagram
@@ -8,6 +9,8 @@ namespace Code.Core.Pentagram
     {
         [SerializeField] private Frog _frogPrefab;
         [SerializeField] RecipesManager recipesManager;
+        [SerializeField] private FrogSOData _emptyFrog;
+
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (!other.TryGetComponent(out IngredientSpawnPointer ingredient))
@@ -35,13 +38,19 @@ namespace Code.Core.Pentagram
                 if (frogRecipe != null)
                 {
                     Debug.Log("Create FROG " + frogRecipe.frogData.Name);
+                    var frog = Instantiate(_frogPrefab, transform.position, Quaternion.identity);
+                    frog.Init(frogRecipe.frogData).Forget();
+                    PentagramData.Summon();
                     return;
                 }
             }
+            
             if (frogRecipe == null)
             {
-                
-                Debug.Log("Create FROG ???" );
+                Debug.Log("Create FROG ???" );var frog = Instantiate(_frogPrefab, transform.position, Quaternion.identity);
+                frog.Init(_emptyFrog).Forget();
+                PentagramData.Summon();
+                return;
             }
         }
     }

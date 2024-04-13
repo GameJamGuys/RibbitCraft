@@ -31,7 +31,10 @@ namespace Code.Core.Pentagram
 
         public static void Summon()
         {
-            //Logic
+            foreach (var ingredient in PentagramData.IngredientsList)
+            {
+                Object.Destroy(ingredient.gameObject);
+            }
             _ingredients.Clear();
         }
     }

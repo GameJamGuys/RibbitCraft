@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Frogs>k__BackingField:
   - {fileID: 11400000, guid: 48d0c51a6feb7b540be4d8b756df0c4e, type: 2}
+  - {fileID: 11400000, guid: fbebb661575f9ac43b6552c05d379f70, type: 2}
+  - {fileID: 11400000, guid: ef8c29f5d19b0e34f82da0ec75dd8dc6, type: 2}
