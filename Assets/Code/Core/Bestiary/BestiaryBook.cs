@@ -6,6 +6,7 @@ namespace Code.Core.Bestiary
     public static class BestiaryBook
     {
         private static List<FrogSOData> _collectedFrogs = new();
+        private static List<Recipe> _collectedRecipes = new();
         
         public static void CollectFrog(FrogSOData data)
         {
