@@ -340,6 +340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bab12a7eb5244f184c1796fafe1423f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _frogPrefab: {fileID: 0}
 --- !u!58 &1028316987
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -524,7 +525,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1278617268}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1028316986}
+        m_TargetAssemblyTypeName: Code.Core.Pentagram.Pentagram, Assembly-CSharp
+        m_MethodName: Summon
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1278617268
 MonoBehaviour:
   m_ObjectHideFlags: 0

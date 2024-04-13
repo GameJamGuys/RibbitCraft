@@ -25,6 +25,8 @@ namespace Code.Core.Pentagram
 
         public void Summon()
         {
+            if (!PentagramData.IsFull)
+                return;
             //FrogSOData frogData = ReciepeService.GetFrog(PentagramData.IngredientsList);
             //var frogGO = Instantiate(_frogPrefab, transform.position, Quaternion.identity);
             //frogGO.Init(frogData);
