@@ -15,6 +15,7 @@ namespace Code.Core.Pentagram
 
         private void OnEnable()
         {
+            PentagramData.ClearData();
             PentagramData.IngredientAdded += FireCandle;
         }
 

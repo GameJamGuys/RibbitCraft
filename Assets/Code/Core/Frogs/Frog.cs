@@ -10,12 +10,28 @@ namespace Code.Core.Frogs
     {
         [SerializeField] private SpriteRenderer _spriteRenderer;
 
+        private FrogSOData _data;
         public async UniTaskVoid Init(FrogSOData soData)
         {
             _spriteRenderer.sprite = soData.Sprite;
-            transform.DOScale(Vector3.zero, 1.5f).SetEase(Ease.InBack);
-            await UniTask.Delay(TimeSpan.FromSeconds(1.5f));
-            BestiaryBook.CollectFrog(soData);
+            var baseScale = transform.localScale.x;
+            transform.DOScale(new Vector3(baseScale * 1.5f, baseScale * 1.5f, baseScale * 1.5f), 0.7f).SetEase(Ease.InCubic);
+            await UniTask.Delay(TimeSpan.FromSeconds(0.7f));
+            transform.DOScale(new Vector3(baseScale, baseScale, baseScale), 0.7f).SetEase(Ease.OutCubic);
+            await UniTask.Delay(TimeSpan.FromSeconds(0.7f));
+            _data = soData;
+        }
+
+        private void OnMouseDown()
+        {
+            DestroyFrog().Forget();
+        }
+
+        private async UniTaskVoid DestroyFrog()
+        {
+            BestiaryBook.CollectFrog(_data);
+            transform.DOScale(Vector3.zero, 1f).SetEase(Ease.OutExpo);
+            await UniTask.Delay(TimeSpan.FromSeconds(1f));
             Destroy(gameObject);
         }
     }
