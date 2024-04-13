@@ -1,3 +1,4 @@
+using System;
 using Code.Core.Frogs;
 using Code.Core.Ingredients;
 using Unity.Mathematics;
@@ -10,6 +11,39 @@ namespace Code.Core.Pentagram
         [SerializeField] private Frog _frogPrefab;
         [SerializeField] RecipesManager recipesManager;
         [SerializeField] private FrogSOData _emptyFrog;
+        [SerializeField] private Candle[] _candles;
+
+        private void OnEnable()
+        {
+            PentagramData.IngredientAdded += FireCandle;
+        }
+
+        private void OnDisable()
+        {
+            PentagramData.IngredientAdded -= FireCandle;
+        }
+
+        private void FireCandle(Ingredient obj)
+        {
+            if (_candles[3].IsFired)
+            {
+                foreach (var candle in _candles)
+                {
+                    candle.FireSummon();
+                }
+
+                return;
+            }
+                
+            for (var i = 0; i < _candles.Length; i++)
+            {
+                if (_candles[i].IsFired)
+                    continue;
+                
+                _candles[i].Fire();
+                return;
+            }
+        }
 
         private void OnTriggerEnter2D(Collider2D other)
         {
@@ -31,6 +65,7 @@ namespace Code.Core.Pentagram
         {
             if (!PentagramData.IsFull)
                 return;
+            
             Recipe frogRecipe = null;
             foreach (var recipe in recipesManager.Recipes)
             {
@@ -41,7 +76,6 @@ namespace Code.Core.Pentagram
                     var frog = Instantiate(_frogPrefab, transform.position, Quaternion.identity);
                     frog.Init(frogRecipe.frogData).Forget();
                     PentagramData.Summon();
-                    return;
                 }
             }
             
@@ -50,7 +84,11 @@ namespace Code.Core.Pentagram
                 Debug.Log("Create FROG ???" );var frog = Instantiate(_frogPrefab, transform.position, Quaternion.identity);
                 frog.Init(_emptyFrog).Forget();
                 PentagramData.Summon();
-                return;
+            }
+
+            foreach (var candle in _candles)
+            {
+                candle.Fuse();
             }
         }
     }

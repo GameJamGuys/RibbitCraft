@@ -1,6 +1,9 @@
+using System;
 using System.Collections.Generic;
 using Code.Core.Ingredients;
+using Unity.VisualScripting;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
 namespace Code.Core.Pentagram
 {
@@ -11,12 +14,20 @@ namespace Code.Core.Pentagram
         public static bool IsFull => _ingredients.Count >= MaxSize;
         public static IReadOnlyList<Ingredient> IngredientsList => _ingredients;
 
+        public static event Action<Ingredient> IngredientAdded;
+
+        static PentagramData()
+        {
+            _ingredients.Clear();
+        }
+
         public static void AddIngredient(Ingredient ingredient)
         {
             if (_ingredients.Count >= MaxSize)
                 return;
             
             _ingredients.Add(ingredient);
+            IngredientAdded?.Invoke(ingredient);
             Debug.Log("Add " + ingredient.Type + " (" + _ingredients.Count + " / " + MaxSize + ")");
         }
         
