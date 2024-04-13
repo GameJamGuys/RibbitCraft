@@ -7,18 +7,18 @@ namespace Code.Core.Pentagram
     {
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (!other.TryGetComponent(out Ingredient ingredient))
+            if (!other.TryGetComponent(out IngredientSpawnPointer ingredient))
                 return;
-            
-            PentagramData.AddIngredient(ingredient);
+
+            IngredientSpawnPointer.Instance.PentagramEntered();
         }
         
         private void OnTriggerExit2D(Collider2D other)
         {
-            if (!other.TryGetComponent(out Ingredient ingredient))
+            if (!other.TryGetComponent(out IngredientSpawnPointer ingredient))
                 return;
             
-            PentagramData.RemoveIngredient(ingredient);
+            IngredientSpawnPointer.Instance.PentagramExited();
         }
     }
 }
