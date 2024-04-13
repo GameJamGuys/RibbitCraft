@@ -209,6 +209,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1266502305}
+    - target: {fileID: 4071076029256817998, guid: cd1e062df84c842b5ad4131070ded751, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4367369224785164082, guid: cd1e062df84c842b5ad4131070ded751, type: 3}
       propertyPath: m_Name
       value: BookCanvas
@@ -827,6 +831,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1266502305}
+    - target: {fileID: 1033251651436332126, guid: 8968581fa69da47a9b40d167e6dbc834, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1733981029693612107, guid: 8968581fa69da47a9b40d167e6dbc834, type: 3}
       propertyPath: m_Name
       value: SkullCanvas
