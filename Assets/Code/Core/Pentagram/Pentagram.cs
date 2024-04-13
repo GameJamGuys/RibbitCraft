@@ -35,8 +35,13 @@ namespace Code.Core.Pentagram
                 if (frogRecipe != null)
                 {
                     Debug.Log("Create FROG " + frogRecipe.frogData.Name);
-                    break;
+                    return;
                 }
+            }
+            if (frogRecipe == null)
+            {
+                
+                Debug.Log("Create FROG ???" );
             }
         }
     }
