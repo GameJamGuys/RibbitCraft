@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Unlocks
   m_EditorClassIdentifier: 
   <Unlocks>k__BackingField:
-  - <Frog>k__BackingField: {fileID: 11400000, guid: ef8c29f5d19b0e34f82da0ec75dd8dc6, type: 2}
+  - <FrogsCount>k__BackingField: 1
     <Ingredient>k__BackingField: {fileID: 11400000, guid: 8883aaa1fea98fa4eb2ea56dda56f5c9, type: 2}

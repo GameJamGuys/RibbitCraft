@@ -15,7 +15,7 @@ namespace Code.Core.Bestiary
     [Serializable]
     public sealed class BestiaryUnlockElement
     {
-        [field: SerializeField] public FrogSOData Frog { get; private set; }
+        [field: SerializeField] public int FrogsCount { get; private set; }
         [field: SerializeField] public IngredientSOType Ingredient { get; private set; }
     }
 }

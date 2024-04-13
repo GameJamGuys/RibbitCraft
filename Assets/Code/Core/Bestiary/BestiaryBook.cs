@@ -22,7 +22,7 @@ namespace Code.Core.Bestiary
         {
             foreach (var unlock in _unlocks.Unlocks)
             {
-                if (unlock.Frog == frog)
+                if (unlock.FrogsCount <= _collectedFrogs.Count)
                     IngredientSpawnerManager.Instance.Unlock(unlock.Ingredient);
             }
         }
