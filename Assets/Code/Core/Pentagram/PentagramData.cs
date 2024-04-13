@@ -9,6 +9,7 @@ namespace Code.Core.Pentagram
         public static int MaxSize => 5;
         private static List<Ingredient> _ingredients = new();
         public static bool IsFull => _ingredients.Count >= MaxSize;
+        public static IReadOnlyList<Ingredient> IngredientsList => _ingredients;
 
         public static void AddIngredient(Ingredient ingredient)
         {
