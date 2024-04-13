@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Code.Core.Frogs;
 using Code.Core.Ingredients;
 using DefaultNamespace;
 using UnityEngine;
@@ -10,6 +11,7 @@ namespace Code
     {
         [SerializeField] private List<Recipe> recipes = new List<Recipe>();
         public List<Recipe> Recipes => recipes;
+
 
         private void Update()
         {
