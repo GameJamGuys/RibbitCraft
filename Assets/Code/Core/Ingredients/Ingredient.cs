@@ -8,7 +8,7 @@ namespace Code.Core.Ingredients
     {
         [SerializeField] private SpriteRenderer _spriteRenderer;
 
-        public EIngredientType Type { get; private set; }
+        public IngredientSOType Type { get; private set; }
     
         private bool _isDragging;
         private IngredientSOType _ingSO;
@@ -16,7 +16,7 @@ namespace Code.Core.Ingredients
         public void Init(IngredientSOType ingredientSoType)
         {
             _ingSO = ingredientSoType;
-            Type = ingredientSoType.Type;
+            Type = ingredientSoType;
             _spriteRenderer.sprite = ingredientSoType.Icon;
         }
         // private void OnMouseDown()
