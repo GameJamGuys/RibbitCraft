@@ -16,7 +16,7 @@ namespace Code.Core.Pentagram
 
         public static event Action<Ingredient> IngredientAdded;
 
-        static PentagramData()
+        public static void ClearData()
         {
             _ingredients.Clear();
         }
