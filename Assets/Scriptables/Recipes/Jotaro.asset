@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43679a41894c44d5a26c5540e614b752, type: 3}
   m_Name: Jotaro
   m_EditorClassIdentifier: 
+  SavingName: Jotaro
   frogData: {fileID: 11400000, guid: fbebb661575f9ac43b6552c05d379f70, type: 2}
   ingredients:
   - {fileID: 11400000, guid: 11a70f37fa9ebf54a8238d8da65afa0e, type: 2}

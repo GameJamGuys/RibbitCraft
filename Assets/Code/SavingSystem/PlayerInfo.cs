@@ -13,7 +13,7 @@ public static class PlayerInfo
         public IntInfo IsOpened;
         public FrogInfo(string name)
         {
-            IsOpened = new IntInfo(name + "FrogIsOpened", 0);
+            IsOpened = new IntInfo(name + "_Frog_IsOpened", 0);
         }
     }
     public class RecipeInfo
@@ -21,7 +21,7 @@ public static class PlayerInfo
         public IntInfo IsOpened;
         public RecipeInfo(string name)
         {
-            IsOpened = new IntInfo(name + "RecipeIsOpened", 0);
+            IsOpened = new IntInfo(name + "_Recipe_IsOpened", 0);
         }
     }
     

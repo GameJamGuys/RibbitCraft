@@ -391,6 +391,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _frogPrefab: {fileID: 0}
   recipesManager: {fileID: 5894996}
+  _emptyFrog: {fileID: 0}
+  _candles: []
 --- !u!58 &1028316987
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -752,6 +754,61 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1561493338
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1561493340}
+  - component: {fileID: 1561493339}
+  m_Layer: 0
+  m_Name: BestiarySaving
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1561493339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561493338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d10c49f981b047a3b8568f6a9e5bc788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frogs:
+  - {fileID: 11400000, guid: fbebb661575f9ac43b6552c05d379f70, type: 2}
+  - {fileID: 11400000, guid: ef8c29f5d19b0e34f82da0ec75dd8dc6, type: 2}
+  - {fileID: 11400000, guid: 48d0c51a6feb7b540be4d8b756df0c4e, type: 2}
+  recipes:
+  - {fileID: 11400000, guid: b62c8703978c96a4c9593b4acd3f05c1, type: 2}
+  - {fileID: 11400000, guid: 0f7848e5ea232d9479c038ca35cfad5f, type: 2}
+  - {fileID: 11400000, guid: 940db0aa92bb83a48af148719b81f458, type: 2}
+  - {fileID: 11400000, guid: 251eb3c1303ee5943a9d1d81c84e704f, type: 2}
+  - {fileID: 11400000, guid: 20cf5d36c70711b41ab141cf6da6ee09, type: 2}
+  - {fileID: 11400000, guid: 989016f6d1a5e364dac03fbae1b1d369, type: 2}
+--- !u!4 &1561493340
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561493338}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1722375177
 GameObject:
   m_ObjectHideFlags: 0
@@ -1159,3 +1216,4 @@ SceneRoots:
   - {fileID: 1028316989}
   - {fileID: 1375541646990209658}
   - {fileID: 5894997}
+  - {fileID: 1561493340}

@@ -16,6 +16,8 @@ namespace Code.Core.Bestiary
                 if (!PlayerInfo.Frogs.ContainsKey(frogs[i].Name))
                 {
                     PlayerInfo.Frogs.Add(frogs[i].Name,new PlayerInfo.FrogInfo(frogs[i].Name));
+                    string frogName = frogs[i].Name;
+                    PlayerInfo.Frogs[frogs[i].Name].IsOpened.Value = 1;
                 }
             }
             for (int i = 0; i < recipes.Count; i++)
@@ -23,6 +25,8 @@ namespace Code.Core.Bestiary
                 if (!PlayerInfo.Recipes.ContainsKey(recipes[i].SavingName))
                 {
                     PlayerInfo.Recipes.Add(recipes[i].SavingName,new PlayerInfo.RecipeInfo(recipes[i].SavingName));
+                    PlayerInfo.Recipes[recipes[i].SavingName].IsOpened.Value = 1;
+                    
                 }
             }
         }
