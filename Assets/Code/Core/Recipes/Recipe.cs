@@ -9,6 +9,7 @@ namespace Code
     [CreateAssetMenu(fileName = "Recipe", menuName = "New Recipe", order = 0)]
     public class Recipe : ScriptableObject
     {
+        public string SavingName;
         public FrogSOData frogData;
         public List<IngredientSOType> ingredients;
 
