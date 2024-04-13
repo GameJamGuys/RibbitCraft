@@ -8,7 +8,8 @@ namespace Code.Core.Ingredients
     {
         [SerializeField] private IngredientSOType _type;
         [SerializeField] private bool _isLocked;
-        
+
+        public IngredientSOType Type => _type;
         private void OnMouseDown()
         {
             if (_isLocked)
