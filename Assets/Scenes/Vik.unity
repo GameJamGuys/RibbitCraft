@@ -322,7 +322,7 @@ GameObject:
   - component: {fileID: 1028316987}
   - component: {fileID: 1028316986}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: Pentagram
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -340,7 +340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bab12a7eb5244f184c1796fafe1423f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _frogPrefab: {fileID: 0}
+  _frogPrefab: {fileID: 9076610216586728008, guid: 50445c4366b6b0d4cb9fb7b220c0bcd8, type: 3}
 --- !u!58 &1028316987
 CircleCollider2D:
   m_ObjectHideFlags: 0
