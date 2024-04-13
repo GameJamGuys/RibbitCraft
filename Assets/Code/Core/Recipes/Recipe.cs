@@ -10,7 +10,7 @@ namespace Code
     public class Recipe : ScriptableObject
     {
         public FrogSOData frogData;
-        private List<IngredientSOType> ingredients;
+        public List<IngredientSOType> ingredients;
 
         public Recipe CheckIngredients(IReadOnlyList<Ingredient> pIngredients)
         {

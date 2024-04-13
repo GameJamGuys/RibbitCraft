@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43679a41894c44d5a26c5540e614b752, type: 3}
-  m_Name: Jotaro
+  m_Name: CiclopRecipe
   m_EditorClassIdentifier: 
-  frogData: {fileID: 11400000, guid: fbebb661575f9ac43b6552c05d379f70, type: 2}
+  frogData: {fileID: 11400000, guid: 48d0c51a6feb7b540be4d8b756df0c4e, type: 2}
   ingredients:
-  - {fileID: 11400000, guid: 11a70f37fa9ebf54a8238d8da65afa0e, type: 2}
-  - {fileID: 11400000, guid: 11a70f37fa9ebf54a8238d8da65afa0e, type: 2}
-  - {fileID: 11400000, guid: 11a70f37fa9ebf54a8238d8da65afa0e, type: 2}
+  - {fileID: 11400000, guid: 217b1bf6603f0c44aa70a2d3629b81a1, type: 2}
   - {fileID: 11400000, guid: 11a70f37fa9ebf54a8238d8da65afa0e, type: 2}
   - {fileID: 11400000, guid: 5d1c08feb491dbc47bab94c20f806d34, type: 2}
+  - {fileID: 11400000, guid: 11a70f37fa9ebf54a8238d8da65afa0e, type: 2}
+  - {fileID: 11400000, guid: 217b1bf6603f0c44aa70a2d3629b81a1, type: 2}
