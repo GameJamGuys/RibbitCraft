@@ -9,9 +9,12 @@ namespace Code.Core.Pentagram
     public sealed class Pentagram : MonoBehaviour
     {
         [SerializeField] private Frog _frogPrefab;
+        [SerializeField] private Transform _spawnPoint;
         [SerializeField] RecipesManager recipesManager;
         [SerializeField] private FrogSOData _emptyFrog;
         [SerializeField] private Candle[] _candles;
+
+        //public event Action OnFiveItems;
 
         private void OnEnable()
         {
@@ -31,6 +34,7 @@ namespace Code.Core.Pentagram
                 {
                     candle.FireSummon();
                 }
+                //OnFiveItems?.Invoke();
 
                 return;
             }
@@ -69,23 +73,25 @@ namespace Code.Core.Pentagram
         {
             if (!PentagramData.IsFull)
                 return;
-            
-            Recipe frogRecipe = null;
+
+            bool findRecipe = false;
             foreach (var recipe in recipesManager.Recipes)
             {
-                frogRecipe = recipe.CheckIngredients(PentagramData.IngredientsList);
+                Recipe frogRecipe = recipe.CheckIngredients(PentagramData.IngredientsList);
                 if (frogRecipe != null)
                 {
                     Debug.Log("Create FROG " + frogRecipe.frogData.Name);
-                    var frog = Instantiate(_frogPrefab, transform.position, Quaternion.identity);
+                    var frog = Instantiate(_frogPrefab, _spawnPoint.position, Quaternion.identity);
                     frog.Init(frogRecipe.frogData).Forget();
                     PentagramData.Summon();
+                    findRecipe = true;
                 }
             }
             
-            if (frogRecipe == null)
+            if (!findRecipe)
             {
-                Debug.Log("Create FROG ???" );var frog = Instantiate(_frogPrefab, transform.position, Quaternion.identity);
+                Debug.Log("Create FROG ???" );
+                var frog = Instantiate(_frogPrefab, _spawnPoint.position, Quaternion.identity);
                 frog.Init(_emptyFrog).Forget();
                 PentagramData.Summon();
             }

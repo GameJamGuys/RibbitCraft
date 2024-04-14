@@ -13,6 +13,17 @@ MonoBehaviour:
   m_Name: AllFrogs
   m_EditorClassIdentifier: 
   <Frogs>k__BackingField:
+  - {fileID: 11400000, guid: 3f781ee4bdf204305a3cd0ff0e64f85e, type: 2}
+  - {fileID: 11400000, guid: 2c5bcfa9fb279415eae289ea3c2cddd3, type: 2}
+  - {fileID: 11400000, guid: 8db12aeb4b92b4ca0b2a07547325b99e, type: 2}
+  - {fileID: 11400000, guid: 6b0e9f78d09be4a8d9375c987adfd63a, type: 2}
   - {fileID: 11400000, guid: 48d0c51a6feb7b540be4d8b756df0c4e, type: 2}
-  - {fileID: 11400000, guid: fbebb661575f9ac43b6552c05d379f70, type: 2}
+  - {fileID: 11400000, guid: d223b3ea870ef47e4b915d82c772b7cd, type: 2}
   - {fileID: 11400000, guid: ef8c29f5d19b0e34f82da0ec75dd8dc6, type: 2}
+  - {fileID: 11400000, guid: cf340740582ef4434aa14e3f4b9f5613, type: 2}
+  - {fileID: 11400000, guid: 88b7c9ff06078437fa4dd4788b10e86e, type: 2}
+  - {fileID: 11400000, guid: 25ed10cc1d58346b1aff10bc0c3bd657, type: 2}
+  - {fileID: 11400000, guid: 1e31f8b23fd1741fda49018a4c2885d6, type: 2}
+  - {fileID: 11400000, guid: 86c953ee87dc84fae849d1ac352f0aed, type: 2}
+  - {fileID: 11400000, guid: 10e81038b6ae04cf6b0ef24d4acb9b36, type: 2}
+  - {fileID: 11400000, guid: 5cf2a8cc6038c4ac6892eb6899e8f4ed, type: 2}
