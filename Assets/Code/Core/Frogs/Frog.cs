@@ -33,7 +33,7 @@ namespace Code.Core.Frogs
             var baseScale = transform.localScale.x;
             transform.DOScale(new Vector3(baseScale * 1.1f, baseScale * 1.1f, baseScale * 1.1f), 0.7f).SetEase(Ease.OutCubic);
             await UniTask.Delay(TimeSpan.FromSeconds(0.3f));
-            transform.DOScale(new Vector3(baseScale, baseScale, baseScale), 0.5f).SetEase(Ease.InCubic);
+            transform.DOScale(new Vector3(baseScale, baseScale, baseScale), 0.5f).SetEase(Ease.OutBack);
             await UniTask.Delay(TimeSpan.FromSeconds(0.2f));
             PhoneController.Instance.ShowPhone();
             
@@ -53,7 +53,7 @@ namespace Code.Core.Frogs
         private async UniTaskVoid DestroyFrog()
         {
             BestiaryBook.CollectFrog(_data);
-            transform.DOScale(Vector3.zero, 1f).SetEase(Ease.OutExpo);
+            transform.DOScale(Vector3.zero, 0.3f).SetEase(Ease.InCirc);
             await UniTask.Delay(TimeSpan.FromSeconds(1f));
             LikesSystem.Likes += Random.Range(_data.Tier.LikesMin, _data.Tier.LikesMax + 1);
             Destroy(gameObject);

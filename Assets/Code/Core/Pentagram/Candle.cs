@@ -18,7 +18,7 @@ namespace Code.Core.Pentagram
         
         public void Fire()
         {
-            SoundManager.Instance.Play(SoundType.FireLight);
+            //SoundManager.Instance.Play(SoundType.FireLight);
             _readyFire.SetActive(false);
             _usualFire.SetActive(true);
         }
