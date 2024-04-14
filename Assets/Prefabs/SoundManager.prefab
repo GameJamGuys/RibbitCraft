@@ -213,19 +213,22 @@ MonoBehaviour:
       - {fileID: 8300000, guid: 35de8d48502b23c4581f01660fa603b4, type: 3}
     - type: 10
       sfx:
-      - {fileID: 8300000, guid: 531cbb6fc749fe74cb0cbacf85634d6c, type: 3}
+      - {fileID: 8300000, guid: 8c9e4ca9cb1cb794fb77069ce6f5dce1, type: 3}
     - type: 11
       sfx:
       - {fileID: 8300000, guid: 531cbb6fc749fe74cb0cbacf85634d6c, type: 3}
     - type: 12
       sfx:
-      - {fileID: 8300000, guid: 531cbb6fc749fe74cb0cbacf85634d6c, type: 3}
+      - {fileID: 8300000, guid: 8381c6b5e969a5e4f827aa0b4d53b1c3, type: 3}
     - type: 13
       sfx:
       - {fileID: 8300000, guid: 531cbb6fc749fe74cb0cbacf85634d6c, type: 3}
     - type: 14
       sfx:
       - {fileID: 8300000, guid: 531cbb6fc749fe74cb0cbacf85634d6c, type: 3}
+    - type: 9
+      sfx:
+      - {fileID: 8300000, guid: c720c67d4376b4e4bb3c173658e344a6, type: 3}
   sfxSource: {fileID: 8488681867971147407}
 --- !u!82 &8488681867971147407
 AudioSource:

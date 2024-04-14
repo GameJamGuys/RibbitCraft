@@ -41,6 +41,7 @@ namespace _Code.Core
         CraftSuccess,
         CraftFail,
         OpenBook,
+        CloseBook,
         FlipBook,
         Writing,
         UnlockNewComponent,
