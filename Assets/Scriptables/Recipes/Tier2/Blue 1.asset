@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43679a41894c44d5a26c5540e614b752, type: 3}
   m_Name: Blue 1
   m_EditorClassIdentifier: 
+  price: 20
   SavingName: Blue1
   frogData: {fileID: 11400000, guid: 2c5bcfa9fb279415eae289ea3c2cddd3, type: 2}
   ingredients:

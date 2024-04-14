@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43679a41894c44d5a26c5540e614b752, type: 3}
   m_Name: Helic 2
   m_EditorClassIdentifier: 
-  price: 1
+  price: 30
   SavingName: Helic2
   frogData: {fileID: 11400000, guid: 1e31f8b23fd1741fda49018a4c2885d6, type: 2}
   ingredients:

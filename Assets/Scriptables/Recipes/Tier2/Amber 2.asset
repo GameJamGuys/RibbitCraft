@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43679a41894c44d5a26c5540e614b752, type: 3}
   m_Name: Amber 2
   m_EditorClassIdentifier: 
-  price: 1
+  price: 20
   SavingName: Amber2
   frogData: {fileID: 11400000, guid: 3f781ee4bdf204305a3cd0ff0e64f85e, type: 2}
   ingredients:

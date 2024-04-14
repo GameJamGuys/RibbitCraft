@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43679a41894c44d5a26c5540e614b752, type: 3}
   m_Name: Teeth 1
   m_EditorClassIdentifier: 
+  price: 10
   SavingName: Teeth1
   frogData: {fileID: 11400000, guid: 5cf2a8cc6038c4ac6892eb6899e8f4ed, type: 2}
   ingredients:

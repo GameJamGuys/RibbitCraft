@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4f579a6b61d494aa0a31b51df328e17, type: 3}
   m_Name: Medium
   m_EditorClassIdentifier: 
-  <LikesMin>k__BackingField: 5
+  <LikesMin>k__BackingField: 8
   <LikesMax>k__BackingField: 12

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43679a41894c44d5a26c5540e614b752, type: 3}
   m_Name: Snail 3
   m_EditorClassIdentifier: 
-  price: 1
+  price: 30
   SavingName: Snail3
   frogData: {fileID: 11400000, guid: 10e81038b6ae04cf6b0ef24d4acb9b36, type: 2}
   ingredients:

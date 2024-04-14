@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43679a41894c44d5a26c5540e614b752, type: 3}
   m_Name: Bug 3
   m_EditorClassIdentifier: 
-  price: 1
+  price: 10
   SavingName: Bug3
   frogData: {fileID: 11400000, guid: 8db12aeb4b92b4ca0b2a07547325b99e, type: 2}
   ingredients:
