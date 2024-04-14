@@ -15,15 +15,27 @@ namespace Code.Core.Frogs
         private bool _canCollect;
         
         private FrogSOData _data;
+
+        private void OnEnable()
+        {
+            PhoneController.Instance.Shoot += OnFrogCaptured;
+        }
+        
+        private void OnDisable()
+        {
+            PhoneController.Instance.Shoot -= OnFrogCaptured;
+        }
+
         public async UniTaskVoid Init(FrogSOData soData, bool success = true)
         {
             SoundManager.Instance.Play(SoundType.Craft);
             _spriteRenderer.sprite = soData.Sprite;
             var baseScale = transform.localScale.x;
-            transform.DOScale(new Vector3(baseScale * 1.5f, baseScale * 1.5f, baseScale * 1.5f), 0.7f).SetEase(Ease.OutCubic);
-            await UniTask.Delay(TimeSpan.FromSeconds(0.7f));
+            transform.DOScale(new Vector3(baseScale * 1.1f, baseScale * 1.1f, baseScale * 1.1f), 0.7f).SetEase(Ease.OutCubic);
+            await UniTask.Delay(TimeSpan.FromSeconds(0.3f));
             transform.DOScale(new Vector3(baseScale, baseScale, baseScale), 0.5f).SetEase(Ease.InCubic);
-            await UniTask.Delay(TimeSpan.FromSeconds(0.5f));
+            await UniTask.Delay(TimeSpan.FromSeconds(0.2f));
+            PhoneController.Instance.ShowPhone();
             
             if (success)
                 SoundManager.Instance.Play(SoundType.CraftSuccess);
@@ -33,11 +45,8 @@ namespace Code.Core.Frogs
             _data = soData;
         }
 
-        private void OnMouseDown()
+        private void OnFrogCaptured()
         {
-            if (!_canCollect)
-                return;
-            
             DestroyFrog().Forget();
         }
 
