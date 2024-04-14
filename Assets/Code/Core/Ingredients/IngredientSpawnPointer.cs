@@ -1,4 +1,5 @@
 using System;
+using _Code.Core;
 using Code.Core.Pentagram;
 using DefaultNamespace;
 using UnityEngine;
@@ -33,6 +34,7 @@ namespace Code.Core.Ingredients
 
         public void StartDrag(IngredientSOType ingredient)
         {
+            SoundManager.Instance.Play(SoundType.Pickup);
             gameObject.SetActive(true);
             IngredientType = ingredient;
             _spriteRenderer.sprite = ingredient.Icon;
@@ -42,6 +44,7 @@ namespace Code.Core.Ingredients
 
         private void StopDrag()
         {
+            SoundManager.Instance.Play(SoundType.Drop);
             _isDragging = false;
             gameObject.SetActive(false);
 

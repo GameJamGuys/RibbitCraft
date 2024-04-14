@@ -37,6 +37,7 @@ namespace _Code.Core
         FireLight,
         DropCrystal,
         Craft,
+        CraftSuccess,
         CraftFail,
         OpenBook,
         FlipBook,

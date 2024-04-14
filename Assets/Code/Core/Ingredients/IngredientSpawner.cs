@@ -1,3 +1,4 @@
+using _Code.Core;
 using Code.Core.Pentagram;
 using DefaultNamespace;
 using UnityEngine;
@@ -23,10 +24,16 @@ namespace Code.Core.Ingredients
         private void OnMouseDown()
         {
             if (_isLocked)
+            {
+                SoundManager.Instance.Play(SoundType.PickupFail);
                 return;
+            }
             
             if (PentagramData.IsFull)
+            {
+                SoundManager.Instance.Play(SoundType.PickupFail);
                 return;
+            }
             
             IngredientSpawnPointer.Instance.StartDrag(_type);
         }

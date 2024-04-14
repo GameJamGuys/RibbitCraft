@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using _Code.Core;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -27,6 +28,7 @@ namespace Code.UI.Book
 
         void NextPage()
         {
+            SoundManager.Instance.Play(SoundType.FlipBook);
             int page = Mathf.Clamp(curPage + 1, 0, pages.Count - 1);
             OpenPage(page);
             CheckPage(page);
@@ -34,6 +36,7 @@ namespace Code.UI.Book
 
         void PrevPage()
         {
+            SoundManager.Instance.Play(SoundType.FlipBook);
             int page = Mathf.Clamp(curPage - 1, 0, pages.Count - 1);
             OpenPage(page);
             CheckPage(page);
