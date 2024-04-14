@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using _Code.Utils;
 using UnityEngine;
 using UnityEngine.Audio;
+using Random = UnityEngine.Random;
 
 namespace _Code.Core
 {
@@ -10,7 +11,7 @@ namespace _Code.Core
     public class Sound
     {
         public SoundType type;
-        public AudioClip sfx;
+        public List<AudioClip> sfx = new List<AudioClip>();
     }
 
     [Serializable]
@@ -23,7 +24,7 @@ namespace _Code.Core
             foreach (var s in sound)
             {
                 if (s.type == type)
-                    return s.sfx;
+                    return s.sfx[Random.Range(0,s.sfx.Count)];
             }
 
             return null;
