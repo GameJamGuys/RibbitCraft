@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43679a41894c44d5a26c5540e614b752, type: 3}
   m_Name: Flower 3
   m_EditorClassIdentifier: 
+  price: 1
   SavingName: Flower3
   frogData: {fileID: 11400000, guid: cf340740582ef4434aa14e3f4b9f5613, type: 2}
   ingredients:
   - {fileID: 11400000, guid: 217b1bf6603f0c44aa70a2d3629b81a1, type: 2}
   - {fileID: 11400000, guid: 217b1bf6603f0c44aa70a2d3629b81a1, type: 2}
-  - {fileID: 11400000, guid: 217b1bf6603f0c44aa70a2d3629b81a1, type: 2}
+  - {fileID: 11400000, guid: 5d1c08feb491dbc47bab94c20f806d34, type: 2}
   - {fileID: 11400000, guid: 8883aaa1fea98fa4eb2ea56dda56f5c9, type: 2}
   - {fileID: 11400000, guid: b35d3cfe79ef1a641b9250fe7b741329, type: 2}

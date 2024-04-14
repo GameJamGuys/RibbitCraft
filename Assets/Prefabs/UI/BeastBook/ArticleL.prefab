@@ -16,6 +16,26 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 80
       objectReference: {fileID: 0}
+    - target: {fileID: 812981611966876013, guid: 6dc4536bd6e6c48e786b814772c2136d, type: 3}
+      propertyPath: m_fontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 812981611966876013, guid: 6dc4536bd6e6c48e786b814772c2136d, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 788da706779ea42bf95fca339d18a002, type: 2}
+    - target: {fileID: 812981611966876013, guid: 6dc4536bd6e6c48e786b814772c2136d, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 812981611966876013, guid: 6dc4536bd6e6c48e786b814772c2136d, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 768198861780891582, guid: 788da706779ea42bf95fca339d18a002, type: 2}
+    - target: {fileID: 812981611966876013, guid: 6dc4536bd6e6c48e786b814772c2136d, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1267060480419541533, guid: 6dc4536bd6e6c48e786b814772c2136d, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.8
@@ -136,13 +156,33 @@ PrefabInstance:
       propertyPath: m_text
       value: ??? ??? ??? ??? ???
       objectReference: {fileID: 0}
+    - target: {fileID: 3817880356361959465, guid: 6dc4536bd6e6c48e786b814772c2136d, type: 3}
+      propertyPath: m_fontSize
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817880356361959465, guid: 6dc4536bd6e6c48e786b814772c2136d, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 788da706779ea42bf95fca339d18a002, type: 2}
+    - target: {fileID: 3817880356361959465, guid: 6dc4536bd6e6c48e786b814772c2136d, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817880356361959465, guid: 6dc4536bd6e6c48e786b814772c2136d, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 768198861780891582, guid: 788da706779ea42bf95fca339d18a002, type: 2}
+    - target: {fileID: 3817880356361959465, guid: 6dc4536bd6e6c48e786b814772c2136d, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4232072170922037993, guid: 6dc4536bd6e6c48e786b814772c2136d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 131
+      value: 121
       objectReference: {fileID: 0}
     - target: {fileID: 4232072170922037993, guid: 6dc4536bd6e6c48e786b814772c2136d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 143
+      value: 138
       objectReference: {fileID: 0}
     - target: {fileID: 4261853929727152784, guid: 6dc4536bd6e6c48e786b814772c2136d, type: 3}
       propertyPath: m_SizeDelta.x
