@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Bug
   <Description>k__BackingField: "\u043F\u043E\u043B\u0451\u0442 \u043D\u043E\u0440\u043C\u0430\u043B\u044C\u043D\u044B\u0439"
-  <Sprite>k__BackingField: {fileID: 21300000, guid: c7c3b5e5165a0d94784134e0d1ca1641, type: 3}
+  <Sprite>k__BackingField: {fileID: 21300000, guid: 8bc47e3bffbda4a0980a1065ea323e0f, type: 3}
   <Tier>k__BackingField: {fileID: 11400000, guid: 33080568289d5984cab17271cb4a11cc, type: 2}
