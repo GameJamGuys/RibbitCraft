@@ -15,4 +15,5 @@ MonoBehaviour:
   <Name>k__BackingField: Amber
   <Description>k__BackingField: "\u0411\u043B\u0438\u043D, \u0447\u0443\u0432\u0430\u043A,
     \u0441\u043B\u0438\u0448\u043A\u043E\u043C \u043C\u043D\u043E\u0433\u043E \u044F\u043D\u0442\u0430\u0440\u044F "
-  <Sprite>k__BackingField: {fileID: 21300000, guid: f8c05d07557074dde82c66d8b736d8c6, type: 3}
+  <Sprite>k__BackingField: {fileID: 21300000, guid: 278c9ca90332941a7a69e773fecc47b9, type: 3}
+  <Tier>k__BackingField: {fileID: 0}
