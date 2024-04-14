@@ -15,4 +15,5 @@ MonoBehaviour:
   <Name>k__BackingField: Disco
   <Description>k__BackingField: "\u0421\u0443\u043F\u0435\u0440\u0437\u0432\u0435\u0437\u0434\u0430
     \u043A\u0430\u043A\u0430\u044F-\u0442\u043E"
-  <Sprite>k__BackingField: {fileID: 21300000, guid: a4a535ed16d1d874888dea2108542f73, type: 3}
+  <Sprite>k__BackingField: {fileID: 21300000, guid: b7a1865536c0e40679f874609aa1c2a1, type: 3}
+  <Tier>k__BackingField: {fileID: 11400000, guid: 988efeeb04185c44ea3345b78a317be0, type: 2}

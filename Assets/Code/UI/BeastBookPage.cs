@@ -12,13 +12,13 @@ namespace Code.UI
         public void Show()
         {
             gameObject.SetActive(true);
-            _canvasGroup.DOFade(1f, 1f);
+            _canvasGroup.DOFade(1f, 0.4f);
         }
 
-        public async UniTaskVoid Hide()
+        public async UniTask Hide()
         {
-            _canvasGroup.DOFade(0f, 1f);
-            await UniTask.Delay(TimeSpan.FromSeconds(1f));
+            _canvasGroup.DOFade(0f, 0.4f);
+            await UniTask.Delay(TimeSpan.FromSeconds(0.4f));
             gameObject.SetActive(false);
         }
     }
