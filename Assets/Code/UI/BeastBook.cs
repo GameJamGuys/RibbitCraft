@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using _Code.Core;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -61,11 +62,15 @@ namespace Code.UI.Book
                 next.interactable = false;
         }
 
-        void OpenPage(int page)
+        private async UniTaskVoid OpenPage(int page)
         {
-            pages[curPage].Hide().Forget();
+            next.enabled = false;
+            prev.enabled = false;
+            await pages[curPage].Hide();
             curPage = page;
             pages[curPage].Show();
+            next.enabled = true;
+            prev.enabled = true;
         }
     }
 
