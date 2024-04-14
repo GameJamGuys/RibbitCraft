@@ -180,6 +180,10 @@ PrefabInstance:
       value: -1.2
       objectReference: {fileID: 0}
     - target: {fileID: 3952491610541135780, guid: 971d72b699b7e41d5886feddf2b890e4, type: 3}
+      propertyPath: _emptyFrog
+      value: 
+      objectReference: {fileID: 11400000, guid: 6b0e9f78d09be4a8d9375c987adfd63a, type: 2}
+    - target: {fileID: 3952491610541135780, guid: 971d72b699b7e41d5886feddf2b890e4, type: 3}
       propertyPath: recipesManager
       value: 
       objectReference: {fileID: 2126166000}
@@ -1612,6 +1616,10 @@ PrefabInstance:
     - target: {fileID: 4715937794443045332, guid: 3c6801d7491ff47b789133414bdbdcd7, type: 3}
       propertyPath: m_Name
       value: Ingredients
+      objectReference: {fileID: 0}
+    - target: {fileID: 6574045642163722789, guid: 3c6801d7491ff47b789133414bdbdcd7, type: 3}
+      propertyPath: _isLocked
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7244886051943074542, guid: 3c6801d7491ff47b789133414bdbdcd7, type: 3}
       propertyPath: m_LocalPosition.x
