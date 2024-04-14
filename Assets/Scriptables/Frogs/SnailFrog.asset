@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: SnailFrog
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Snail
-  <Sprite>k__BackingField: {fileID: 21300000, guid: 4072d69d0d25717478c5add74eb0f329, type: 3}
+  <Description>k__BackingField: 
+  <Sprite>k__BackingField: {fileID: 21300000, guid: 357736eab22a140459cf7c51107da072, type: 3}
