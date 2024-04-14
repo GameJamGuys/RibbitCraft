@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,7 +7,7 @@ namespace Code.UI.Book
     public class BeastBook : MonoBehaviour
     {
         [SerializeField]
-        List<GameObject> pages;
+        List<BeastBookPage> pages;
         [Space]
         [SerializeField] Button next, prev;
 
@@ -24,12 +23,6 @@ namespace Code.UI.Book
         {
             next.onClick.RemoveListener(NextPage);
             prev.onClick.RemoveListener(PrevPage);
-        }
-
-        void Start()
-        {
-            OpenPage(curPage);
-            CheckPage(curPage);
         }
 
         void NextPage()
@@ -59,9 +52,9 @@ namespace Code.UI.Book
 
         void OpenPage(int page)
         {
-            pages[curPage].SetActive(false);
+            pages[curPage].Hide().Forget();
             curPage = page;
-            pages[curPage].SetActive(true);
+            pages[curPage].Show();
         }
     }
 
