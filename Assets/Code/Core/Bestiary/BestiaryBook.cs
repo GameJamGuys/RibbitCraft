@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using _Code.Core;
 using Code.Core.Frogs;
 using Code.Core.Ingredients;
 using UnityEngine;
@@ -17,7 +18,10 @@ namespace Code.Core.Bestiary
         public static void CollectFrog(FrogSOData data)
         {
             if (!PentagramSave.CollectedFrogs.Contains(data))
+            {
+                SoundManager.Instance.Play(SoundType.UnlockNewComponent);
                 PentagramSave.CollectedFrogs.Add(data);
+            }
             CheckUnlocks();
             SaveToPrefs();
         }
@@ -26,7 +30,10 @@ namespace Code.Core.Bestiary
         {
             Debug.Log("Collect recipe: " + data.SavingName);
             if (!PentagramSave.CollectedRecipes.Contains(data))
+            {
+                SoundManager.Instance.Play(SoundType.Writing);
                 PentagramSave.CollectedRecipes.Add(data);
+            }
             SaveToPrefs();
         }
 

@@ -1,4 +1,5 @@
 using System;
+using _Code.Core;
 using Code.Core.Frogs;
 using Code.Core.Ingredients;
 using UnityEngine;
@@ -84,9 +85,10 @@ namespace Code.Core.Pentagram
                 Recipe frogRecipe = recipe.CheckIngredients(PentagramData.IngredientsList);
                 if (frogRecipe != null)
                 {
+                    
                     Debug.Log("Create FROG " + frogRecipe.frogData.Name);
                     var frog = Instantiate(_frogPrefab, _spawnPoint.position, Quaternion.identity);
-                    frog.Init(frogRecipe.frogData).Forget();
+                    frog.Init(frogRecipe.frogData, true).Forget();
                     PentagramData.Summon();
                     BestiaryBook.CollectRecipe(frogRecipe);
 
@@ -98,7 +100,7 @@ namespace Code.Core.Pentagram
             {
                 Debug.Log("Create FROG ???" );
                 var frog = Instantiate(_frogPrefab, _spawnPoint.position, Quaternion.identity);
-                frog.Init(_emptyFrog).Forget();
+                frog.Init(_emptyFrog, false).Forget();
                 PentagramData.Summon();
             }
 
