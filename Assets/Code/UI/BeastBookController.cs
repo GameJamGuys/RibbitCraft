@@ -4,6 +4,7 @@ using _Code.Core;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
+using Code.Core.Bestiary;
 
 namespace Code.UI.Book
 {
@@ -11,6 +12,8 @@ namespace Code.UI.Book
     {
         [SerializeField]
         GameObject book;
+        [SerializeField]
+        Animator bookAnim;
 
         [SerializeField]
         Button open, close;
@@ -21,13 +24,18 @@ namespace Code.UI.Book
         {
             open.onClick.AddListener(() => ShowBook(true));
             close.onClick.AddListener(() => ShowBook(false));
+            BestiaryBook.OnFrogCollect += ShakeBook;
+
         }
 
         private void OnDisable()
         {
             open.onClick.RemoveListener(() => ShowBook(true));
             close.onClick.RemoveListener(() => ShowBook(false));
+            BestiaryBook.OnFrogCollect -= ShakeBook;
         }
+
+        void ShakeBook() => bookAnim.SetTrigger("Shake");
 
         private void Start()
         {

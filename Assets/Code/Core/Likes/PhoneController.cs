@@ -12,7 +12,9 @@ namespace Code.Core.Likes
         [SerializeField] private Animator _animator;
         [SerializeField] private Transform _target;
 
+        public event Action PhoneUp;
         public event Action Shoot;
+
 
         private async UniTaskVoid OnMouseDownAsync()
         {
@@ -22,6 +24,7 @@ namespace Code.Core.Likes
 
         public void ShowPhone()
         {
+            PhoneUp?.Invoke();
             _animator.SetTrigger("OnShow");
         }
         

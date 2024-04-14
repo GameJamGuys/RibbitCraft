@@ -44,13 +44,13 @@ namespace Code.Core.Ingredients
 
         private void StopDrag()
         {
-            SoundManager.Instance.Play(SoundType.Drop);
             _isDragging = false;
             gameObject.SetActive(false);
 
             Debug.Log("!!");
             if (_isInPentagram)
             {
+                SoundManager.Instance.Play(SoundType.Drop);
                 Debug.Log("!");
                 //var ingredient = Instantiate(_ingredientPrefab, transform.position, Quaternion.Euler(0, 0, Random.Range(0, 360)));
                 var ingredient = Instantiate(_ingredientPrefab, transform.position + Vector3.down * 0.3f, Quaternion.Euler(0, 0, Random.Range(-30, 30)));

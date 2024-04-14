@@ -15,12 +15,15 @@ namespace Code.Core.Bestiary
 
         private static BestiaryUnlock _unlocks;
 
+        public static Action OnFrogCollect;
+
         public static void CollectFrog(FrogSOData data)
         {
             if (!PentagramSave.CollectedFrogs.Contains(data))
             {
                 SoundManager.Instance.Play(SoundType.UnlockNewComponent);
                 PentagramSave.CollectedFrogs.Add(data);
+                OnFrogCollect?.Invoke();
             }
             CheckUnlocks();
             SaveToPrefs();
