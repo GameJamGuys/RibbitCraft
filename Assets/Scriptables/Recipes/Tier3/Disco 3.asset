@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43679a41894c44d5a26c5540e614b752, type: 3}
-  m_Name: Amber 2
+  m_Name: Disco 3
   m_EditorClassIdentifier: 
   price: 1
-  SavingName: Amber2
-  frogData: {fileID: 11400000, guid: 3f781ee4bdf204305a3cd0ff0e64f85e, type: 2}
+  SavingName: Disco3
+  frogData: {fileID: 11400000, guid: d223b3ea870ef47e4b915d82c772b7cd, type: 2}
   ingredients:
-  - {fileID: 11400000, guid: 02185e8089a2f7f4eb8ca469c74d66d2, type: 2}
-  - {fileID: 11400000, guid: 02185e8089a2f7f4eb8ca469c74d66d2, type: 2}
-  - {fileID: 11400000, guid: 02185e8089a2f7f4eb8ca469c74d66d2, type: 2}
+  - {fileID: 11400000, guid: b35d3cfe79ef1a641b9250fe7b741329, type: 2}
+  - {fileID: 11400000, guid: b35d3cfe79ef1a641b9250fe7b741329, type: 2}
   - {fileID: 11400000, guid: 5d1c08feb491dbc47bab94c20f806d34, type: 2}
-  - {fileID: 11400000, guid: 8883aaa1fea98fa4eb2ea56dda56f5c9, type: 2}
+  - {fileID: 11400000, guid: 2bc1c464bbc7ace42b3da2530ba2b6a7, type: 2}
+  - {fileID: 11400000, guid: 968fe012c2c264042915163ed0a4da99, type: 2}
