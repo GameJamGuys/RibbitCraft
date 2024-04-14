@@ -1,8 +1,10 @@
+using System;
 using _Code.Core;
 using Code.Core.Bestiary;
 using Code.Core.Pentagram;
 using Code.UI.Book;
 using DefaultNamespace;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Code.Core.Ingredients
@@ -22,6 +24,11 @@ namespace Code.Core.Ingredients
         private void Start()
         {
             _item.gameObject.SetActive(!_isLocked);
+        }
+
+        private void OnMouseEnter()
+        {
+            
         }
 
         private void OnMouseDown()

@@ -31,12 +31,15 @@ namespace Code.UI.Book
 
         private void Start()
         {
-            ShowBook(false);
+            book.gameObject.SetActive(false);
         }
 
         public void ShowBook(bool isShow)
         {
-            SoundManager.Instance.Play(SoundType.OpenBook);
+            if (isShow)
+                SoundManager.Instance.Play(SoundType.OpenBook);
+            else
+                SoundManager.Instance.Play(SoundType.CloseBook);
             book.SetActive(isShow);
         }
     }

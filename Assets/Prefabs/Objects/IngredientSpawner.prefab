@@ -95,6 +95,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8540078252643131289}
   - component: {fileID: 1073174093442739447}
+  - component: {fileID: 6201439847503337101}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -169,6 +170,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6201439847503337101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3213610308326990487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
+  m_EffectDistance: {x: 30, y: 30}
+  m_UseGraphicAlpha: 1
 --- !u!1 &7515964222804211059
 GameObject:
   m_ObjectHideFlags: 0
@@ -219,6 +235,7 @@ MonoBehaviour:
   _visual: {fileID: 1748323916974148579}
   _item: {fileID: 1073174093442739447}
   _isLocked: 0
+  beastBookController: {fileID: 0}
 --- !u!70 &6871064573776462865
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
