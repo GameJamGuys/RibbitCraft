@@ -15,6 +15,8 @@ namespace Code.UI.Book
         [SerializeField]
         Button open, close;
 
+        public bool BookIsOpen => book.activeSelf;
+
         private void OnEnable()
         {
             open.onClick.AddListener(() => ShowBook(true));

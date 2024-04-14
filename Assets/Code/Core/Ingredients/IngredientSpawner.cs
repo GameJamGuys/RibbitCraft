@@ -1,5 +1,7 @@
 using _Code.Core;
+using Code.Core.Bestiary;
 using Code.Core.Pentagram;
+using Code.UI.Book;
 using DefaultNamespace;
 using UnityEngine;
 
@@ -13,6 +15,7 @@ namespace Code.Core.Ingredients
         [SerializeField] private GameObject _visual;
         [SerializeField] private SpriteRenderer _item;
         [SerializeField] private bool _isLocked;
+        [SerializeField] private BeastBookController beastBookController;
 
         public IngredientSOType Type => _type;
 
@@ -23,13 +26,7 @@ namespace Code.Core.Ingredients
 
         private void OnMouseDown()
         {
-            if (_isLocked)
-            {
-                SoundManager.Instance.Play(SoundType.PickupFail);
-                return;
-            }
-            
-            if (PentagramData.IsFull)
+            if (_isLocked || PentagramData.IsFull || beastBookController.BookIsOpen)
             {
                 SoundManager.Instance.Play(SoundType.PickupFail);
                 return;
