@@ -1,8 +1,10 @@
 using System;
 using Code.Core.Bestiary;
+using Code.Core.Likes;
 using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Code.Core.Frogs
 {
@@ -16,10 +18,10 @@ namespace Code.Core.Frogs
         {
             _spriteRenderer.sprite = soData.Sprite;
             var baseScale = transform.localScale.x;
-            transform.DOScale(new Vector3(baseScale * 1.5f, baseScale * 1.5f, baseScale * 1.5f), 0.7f).SetEase(Ease.InCubic);
+            transform.DOScale(new Vector3(baseScale * 1.5f, baseScale * 1.5f, baseScale * 1.5f), 0.7f).SetEase(Ease.OutCubic);
             await UniTask.Delay(TimeSpan.FromSeconds(0.7f));
-            transform.DOScale(new Vector3(baseScale, baseScale, baseScale), 0.7f).SetEase(Ease.OutCubic);
-            await UniTask.Delay(TimeSpan.FromSeconds(0.7f));
+            transform.DOScale(new Vector3(baseScale, baseScale, baseScale), 0.5f).SetEase(Ease.InCubic);
+            await UniTask.Delay(TimeSpan.FromSeconds(0.5f));
             _canCollect = true;
             _data = soData;
         }
@@ -37,6 +39,7 @@ namespace Code.Core.Frogs
             BestiaryBook.CollectFrog(_data);
             transform.DOScale(Vector3.zero, 1f).SetEase(Ease.OutExpo);
             await UniTask.Delay(TimeSpan.FromSeconds(1f));
+            LikesSystem.Likes += Random.Range(_data.Tier.LikesMin, _data.Tier.LikesMax + 1);
             Destroy(gameObject);
         }
     }
