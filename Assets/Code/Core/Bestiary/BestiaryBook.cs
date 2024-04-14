@@ -16,7 +16,8 @@ namespace Code.Core.Bestiary
 
         public static void CollectFrog(FrogSOData data)
         {
-            PentagramSave.CollectedFrogs.Add(data);
+            if (!PentagramSave.CollectedFrogs.Contains(data))
+                PentagramSave.CollectedFrogs.Add(data);
             CheckUnlocks();
             SaveToPrefs();
         }
@@ -24,7 +25,8 @@ namespace Code.Core.Bestiary
         public static void CollectRecipe(Recipe data)
         {
             Debug.Log("Collect recipe: " + data.SavingName);
-            PentagramSave.CollectedRecipes.Add(data);
+            if (!PentagramSave.CollectedRecipes.Contains(data))
+                PentagramSave.CollectedRecipes.Add(data);
             SaveToPrefs();
         }
 

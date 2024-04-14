@@ -9,7 +9,8 @@ namespace Code.Core.Frogs
     public sealed class Frog : MonoBehaviour
     {
         [SerializeField] private SpriteRenderer _spriteRenderer;
-
+        private bool _canCollect;
+        
         private FrogSOData _data;
         public async UniTaskVoid Init(FrogSOData soData)
         {
@@ -19,11 +20,15 @@ namespace Code.Core.Frogs
             await UniTask.Delay(TimeSpan.FromSeconds(0.7f));
             transform.DOScale(new Vector3(baseScale, baseScale, baseScale), 0.7f).SetEase(Ease.OutCubic);
             await UniTask.Delay(TimeSpan.FromSeconds(0.7f));
+            _canCollect = true;
             _data = soData;
         }
 
         private void OnMouseDown()
         {
+            if (!_canCollect)
+                return;
+            
             DestroyFrog().Forget();
         }
 
