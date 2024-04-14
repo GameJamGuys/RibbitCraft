@@ -332,6 +332,30 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -25
       objectReference: {fileID: 0}
+    - target: {fileID: 2156480534041940702, guid: cd1e062df84c842b5ad4131070ded751, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2156480534041940702, guid: cd1e062df84c842b5ad4131070ded751, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2156480534041940702, guid: cd1e062df84c842b5ad4131070ded751, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2156480534041940702, guid: cd1e062df84c842b5ad4131070ded751, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2156480534041940702, guid: cd1e062df84c842b5ad4131070ded751, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 643
+      objectReference: {fileID: 0}
+    - target: {fileID: 2156480534041940702, guid: cd1e062df84c842b5ad4131070ded751, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -322
+      objectReference: {fileID: 0}
     - target: {fileID: 3924329831877801837, guid: cd1e062df84c842b5ad4131070ded751, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -1571,7 +1595,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.14509805, g: 0.08627451, b: 0.18039216, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -2149,7 +2173,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 9153535903643012600, guid: 8968581fa69da47a9b40d167e6dbc834, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 6456915441560144457, guid: 8968581fa69da47a9b40d167e6dbc834, type: 3}
       insertIndex: -1
       addedObject: {fileID: 894758116}
     m_AddedComponents: []
