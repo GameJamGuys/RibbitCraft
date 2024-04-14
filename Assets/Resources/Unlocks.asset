@@ -14,8 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Unlocks>k__BackingField:
   - <FrogsCount>k__BackingField: 1
-    <Ingredient>k__BackingField: {fileID: 11400000, guid: 11a70f37fa9ebf54a8238d8da65afa0e, type: 2}
-  - <FrogsCount>k__BackingField: 2
-    <Ingredient>k__BackingField: {fileID: 11400000, guid: 02185e8089a2f7f4eb8ca469c74d66d2, type: 2}
+    <Ingredient>k__BackingField: {fileID: 11400000, guid: 8883aaa1fea98fa4eb2ea56dda56f5c9, type: 2}
   - <FrogsCount>k__BackingField: 3
+    <Ingredient>k__BackingField: {fileID: 11400000, guid: 11a70f37fa9ebf54a8238d8da65afa0e, type: 2}
+  - <FrogsCount>k__BackingField: 5
     <Ingredient>k__BackingField: {fileID: 11400000, guid: 2bc1c464bbc7ace42b3da2530ba2b6a7, type: 2}
+  - <FrogsCount>k__BackingField: 6
+    <Ingredient>k__BackingField: {fileID: 11400000, guid: 02185e8089a2f7f4eb8ca469c74d66d2, type: 2}
+  - <FrogsCount>k__BackingField: 8
+    <Ingredient>k__BackingField: {fileID: 11400000, guid: 968fe012c2c264042915163ed0a4da99, type: 2}

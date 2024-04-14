@@ -3,6 +3,7 @@ using Code.Core.Frogs;
 using Code.Core.Ingredients;
 using Unity.Mathematics;
 using UnityEngine;
+using Code.Core.Bestiary;
 
 namespace Code.Core.Pentagram
 {
@@ -14,7 +15,8 @@ namespace Code.Core.Pentagram
         [SerializeField] private FrogSOData _emptyFrog;
         [SerializeField] private Candle[] _candles;
 
-        //public event Action OnFiveItems;
+        public event Action OnFiveItems;
+        public event Action OnSummon;
 
         private void OnEnable()
         {
@@ -30,11 +32,13 @@ namespace Code.Core.Pentagram
         {
             if (_candles[3].IsFired)
             {
+                _candles[4].Fire();
+
                 foreach (var candle in _candles)
                 {
                     candle.FireSummon();
                 }
-                //OnFiveItems?.Invoke();
+                OnFiveItems?.Invoke();
 
                 return;
             }
@@ -75,6 +79,7 @@ namespace Code.Core.Pentagram
                 return;
 
             bool findRecipe = false;
+
             foreach (var recipe in recipesManager.Recipes)
             {
                 Recipe frogRecipe = recipe.CheckIngredients(PentagramData.IngredientsList);
@@ -84,6 +89,8 @@ namespace Code.Core.Pentagram
                     var frog = Instantiate(_frogPrefab, _spawnPoint.position, Quaternion.identity);
                     frog.Init(frogRecipe.frogData).Forget();
                     PentagramData.Summon();
+                    BestiaryBook.CollectRecipe(frogRecipe);
+
                     findRecipe = true;
                 }
             }
@@ -100,6 +107,8 @@ namespace Code.Core.Pentagram
             {
                 candle.Fuse();
             }
+
+            OnSummon?.Invoke();
         }
     }
 }

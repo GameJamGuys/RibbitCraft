@@ -13,12 +13,12 @@ namespace Code.UI.Book
         [SerializeField]
         FrogSOData frog;
         [SerializeField]
-        List<Recipe> recipes;
-
-        [SerializeField]
         TMP_Text frogName, frogDesc;
-        [SerializeField]
-        List<RecipeUI> recipeUIs;
+
+        [Space]
+        [SerializeField] List<Recipe> recipes;
+        [SerializeField] List<RecipeUI> recipeUIs;
+
         [Space]
         [SerializeField]
         Image image;
@@ -30,17 +30,21 @@ namespace Code.UI.Book
             frogName.text = frog.Name;
             image.sprite = frog.Sprite;
 
+            foreach(RecipeUI rec in recipeUIs)
+            {
+                rec.SetUp(recipes[recipeUIs.IndexOf(rec)]);
+            }
+        }
+
+        private void OnEnable()
+        {
             if (BestiaryBook.CheckFrog(frog))
             {
                 questionMark.SetActive(false);
                 image.color = Color.white;
+
+                frogDesc.text = frog.Description;
             }
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
         }
     }
 

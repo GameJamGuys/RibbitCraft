@@ -7,6 +7,8 @@ namespace Code.Core.Ingredients
     public sealed class IngredientSpawner : MonoBehaviour
     {
         [SerializeField] private IngredientSOType _type;
+
+        [Space]
         [SerializeField] private GameObject _visual;
         [SerializeField] private SpriteRenderer _item;
         [SerializeField] private bool _isLocked;
@@ -15,8 +17,7 @@ namespace Code.Core.Ingredients
 
         private void Start()
         {
-            _item.sprite = _type.Icon;
-            _visual.SetActive(!_isLocked);
+            _item.gameObject.SetActive(!_isLocked);
         }
 
         private void OnMouseDown()
@@ -33,7 +34,7 @@ namespace Code.Core.Ingredients
         public void Unlock()
         {
             _isLocked = false;
-            _visual.SetActive(true);
+            _item.gameObject.SetActive(true);
         }
     }
 }

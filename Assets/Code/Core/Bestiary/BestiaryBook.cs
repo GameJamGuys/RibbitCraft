@@ -43,6 +43,8 @@ namespace Code.Core.Bestiary
         public static void Init()
         {
             _unlocks = Resources.Load<BestiaryUnlock>("Unlocks");
+            _collectedFrogs.Clear();
+            _collectedRecipes.Clear();
         }
     }
 }

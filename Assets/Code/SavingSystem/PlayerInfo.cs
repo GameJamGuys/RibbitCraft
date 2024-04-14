@@ -6,8 +6,6 @@ using UnityEngine;
 
 public static class PlayerInfo
 {
-    
-    
     public class FrogInfo
     {
         public IntInfo IsOpened;

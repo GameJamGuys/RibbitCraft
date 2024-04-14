@@ -49,7 +49,8 @@ namespace Code.Core.Ingredients
             if (_isInPentagram)
             {
                 Debug.Log("!");
-                var ingredient = Instantiate(_ingredientPrefab, transform.position, Quaternion.Euler(0, 0, Random.Range(0, 360)));
+                //var ingredient = Instantiate(_ingredientPrefab, transform.position, Quaternion.Euler(0, 0, Random.Range(0, 360)));
+                var ingredient = Instantiate(_ingredientPrefab, transform.position + Vector3.down * 0.3f, Quaternion.Euler(0, 0, Random.Range(-30, 30)));
                 ingredient.Init(IngredientType);
                 PentagramData.AddIngredient(ingredient);
                 PentagramExited();

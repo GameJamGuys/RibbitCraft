@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: GemFrog
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Gem
+  <Description>k__BackingField: "\u041F\u0440\u0438\u0437\u043D\u0430\u043A \u0440\u043E\u0441-\u043A\u0432\u0430-\u0448\u0438"
   <Sprite>k__BackingField: {fileID: 21300000, guid: c3f09336117a38b45883926a58aa7dbb, type: 3}

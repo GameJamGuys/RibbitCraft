@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using Code;
+using Code.Core.Bestiary;
 
 namespace Code.UI.Book
 {
@@ -14,16 +14,23 @@ namespace Code.UI.Book
         [SerializeField]
         List<Image> images;
 
-        void SetUp(Recipe rec)
+        public void SetUp(Recipe rec)
         {
             recipe = rec;
+            CheckRecipeToShow();
         }
 
-        private void Start()
+        private void OnEnable()
         {
             if (recipe)
+                CheckRecipeToShow();
+        }
+
+        void CheckRecipeToShow()
+        {
+            if (BestiaryBook.CheckRecipe(recipe))
             {
-                foreach(Image item in images)
+                foreach (Image item in images)
                 {
                     item.sprite = recipe.ingredients[images.IndexOf(item)].Icon;
                 }

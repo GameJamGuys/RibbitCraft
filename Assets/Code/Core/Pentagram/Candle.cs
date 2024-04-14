@@ -23,7 +23,7 @@ namespace Code.Core.Pentagram
 
         public void FireSummon()
         {
-            _usualFire.SetActive(false);
+            //_usualFire.SetActive(false);
             _readyFire.SetActive(true);
         }
     }
