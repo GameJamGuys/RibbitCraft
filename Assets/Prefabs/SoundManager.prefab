@@ -178,17 +178,54 @@ MonoBehaviour:
   sounds:
     sound:
     - type: 0
-      sfx: {fileID: 8300000, guid: 531cbb6fc749fe74cb0cbacf85634d6c, type: 3}
+      sfx:
+      - {fileID: 8300000, guid: 7bdd6e47f160a44459910b91e0905bee, type: 3}
+      - {fileID: 8300000, guid: 365e23dee380ba14b97f2885ba3d0b58, type: 3}
+      - {fileID: 8300000, guid: cd9f001bef106c04e95f12f04b337c6f, type: 3}
     - type: 1
-      sfx: {fileID: 8300000, guid: 8cc59f25ad8a9c44db71069b35211cae, type: 3}
+      sfx:
+      - {fileID: 8300000, guid: 531cbb6fc749fe74cb0cbacf85634d6c, type: 3}
     - type: 2
-      sfx: {fileID: 8300000, guid: 62274228ff8241346bd1703654e5dc47, type: 3}
+      sfx:
+      - {fileID: 8300000, guid: 4707a8b85ffb4a54689f00c177a1d3f7, type: 3}
+      - {fileID: 8300000, guid: 305180aac3cd9c5459e385ed8f00b606, type: 3}
     - type: 3
-      sfx: {fileID: 8300000, guid: 122d2dc210bcbde479ec574fb9dac266, type: 3}
-    - type: 3
-      sfx: {fileID: 8300000, guid: 122d2dc210bcbde479ec574fb9dac266, type: 3}
-    - type: 3
-      sfx: {fileID: 8300000, guid: 122d2dc210bcbde479ec574fb9dac266, type: 3}
+      sfx:
+      - {fileID: 8300000, guid: fd278daebcae01343aba54410ae5ec3f, type: 3}
+    - type: 4
+      sfx:
+      - {fileID: 8300000, guid: 531cbb6fc749fe74cb0cbacf85634d6c, type: 3}
+    - type: 5
+      sfx:
+      - {fileID: 8300000, guid: 531cbb6fc749fe74cb0cbacf85634d6c, type: 3}
+    - type: 6
+      sfx:
+      - {fileID: 8300000, guid: 531cbb6fc749fe74cb0cbacf85634d6c, type: 3}
+    - type: 7
+      sfx:
+      - {fileID: 8300000, guid: 531cbb6fc749fe74cb0cbacf85634d6c, type: 3}
+    - type: 8
+      sfx:
+      - {fileID: 8300000, guid: e47478afd0effe14b8b4a8184e3525b2, type: 3}
+    - type: 9
+      sfx:
+      - {fileID: 8300000, guid: b8f223d75b43c41479c16eae6f5059b4, type: 3}
+      - {fileID: 8300000, guid: 35de8d48502b23c4581f01660fa603b4, type: 3}
+    - type: 10
+      sfx:
+      - {fileID: 8300000, guid: 531cbb6fc749fe74cb0cbacf85634d6c, type: 3}
+    - type: 11
+      sfx:
+      - {fileID: 8300000, guid: 531cbb6fc749fe74cb0cbacf85634d6c, type: 3}
+    - type: 12
+      sfx:
+      - {fileID: 8300000, guid: 531cbb6fc749fe74cb0cbacf85634d6c, type: 3}
+    - type: 13
+      sfx:
+      - {fileID: 8300000, guid: 531cbb6fc749fe74cb0cbacf85634d6c, type: 3}
+    - type: 14
+      sfx:
+      - {fileID: 8300000, guid: 531cbb6fc749fe74cb0cbacf85634d6c, type: 3}
   sfxSource: {fileID: 8488681867971147407}
 --- !u!82 &8488681867971147407
 AudioSource:

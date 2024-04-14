@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using _Code.Core;
 using UnityEngine;
@@ -24,6 +25,13 @@ namespace Code.UI.Book
         {
             next.onClick.RemoveListener(NextPage);
             prev.onClick.RemoveListener(PrevPage);
+        }
+
+        private void Start()
+        {
+            pages[0].Show();
+            next.interactable = true;
+            prev.interactable = false;
         }
 
         void NextPage()
