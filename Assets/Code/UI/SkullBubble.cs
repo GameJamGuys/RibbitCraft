@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using _Code.Core;
 using UnityEngine;
 using TMPro;
 
@@ -27,6 +28,7 @@ namespace Code.UI.Skull
 
         public void ShowText()
         {
+            SoundManager.Instance.Play(SoundType.Teeth);
             string phrase = phrases[Random.Range(0, phrases.Count)];
             field.text = phrase;
         }

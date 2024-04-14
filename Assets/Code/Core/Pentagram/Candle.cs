@@ -1,3 +1,4 @@
+using _Code.Core;
 using UnityEngine;
 
 namespace Code.Core.Pentagram
@@ -17,12 +18,14 @@ namespace Code.Core.Pentagram
         
         public void Fire()
         {
+            SoundManager.Instance.Play(SoundType.FireLight);
             _readyFire.SetActive(false);
             _usualFire.SetActive(true);
         }
 
         public void FireSummon()
         {
+            SoundManager.Instance.Play(SoundType.FireLight);
             //_usualFire.SetActive(false);
             _readyFire.SetActive(true);
         }

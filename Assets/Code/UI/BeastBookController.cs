@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using _Code.Core;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
@@ -33,6 +34,7 @@ namespace Code.UI.Book
 
         public void ShowBook(bool isShow)
         {
+            SoundManager.Instance.Play(SoundType.OpenBook);
             book.SetActive(isShow);
         }
     }

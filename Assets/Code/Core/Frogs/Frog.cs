@@ -1,4 +1,5 @@
 using System;
+using _Code.Core;
 using Code.Core.Bestiary;
 using Code.Core.Likes;
 using Cysharp.Threading.Tasks;
@@ -14,14 +15,20 @@ namespace Code.Core.Frogs
         private bool _canCollect;
         
         private FrogSOData _data;
-        public async UniTaskVoid Init(FrogSOData soData)
+        public async UniTaskVoid Init(FrogSOData soData, bool success = true)
         {
+            SoundManager.Instance.Play(SoundType.Craft);
             _spriteRenderer.sprite = soData.Sprite;
             var baseScale = transform.localScale.x;
             transform.DOScale(new Vector3(baseScale * 1.5f, baseScale * 1.5f, baseScale * 1.5f), 0.7f).SetEase(Ease.OutCubic);
             await UniTask.Delay(TimeSpan.FromSeconds(0.7f));
             transform.DOScale(new Vector3(baseScale, baseScale, baseScale), 0.5f).SetEase(Ease.InCubic);
             await UniTask.Delay(TimeSpan.FromSeconds(0.5f));
+            
+            if (success)
+                SoundManager.Instance.Play(SoundType.CraftSuccess);
+            else
+                SoundManager.Instance.Play(SoundType.CraftFail);
             _canCollect = true;
             _data = soData;
         }

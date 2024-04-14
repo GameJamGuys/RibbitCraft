@@ -1809,6 +1809,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ingredients
       objectReference: {fileID: 0}
+    - target: {fileID: 6574045642163722789, guid: 3c6801d7491ff47b789133414bdbdcd7, type: 3}
+      propertyPath: _isLocked
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7244886051943074542, guid: 3c6801d7491ff47b789133414bdbdcd7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
