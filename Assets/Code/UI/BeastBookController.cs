@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 using Code.Core.Bestiary;
+using Code.Core.Likes;
 
 namespace Code.UI.Book
 {
@@ -20,20 +21,28 @@ namespace Code.UI.Book
 
         public bool BookIsOpen => book.activeSelf;
 
+        bool isPhoneUp;
+
         private void OnEnable()
         {
             open.onClick.AddListener(() => ShowBook(true));
             close.onClick.AddListener(() => ShowBook(false));
             BestiaryBook.OnFrogCollect += ShakeBook;
-
+            PhoneController.Instance.PhoneUp += PhoneUp;
+            PhoneController.Instance.Shoot += PhoneDown;
         }
 
         private void OnDisable()
         {
-            open.onClick.RemoveListener(() => ShowBook(true));
-            close.onClick.RemoveListener(() => ShowBook(false));
+            open.onClick.RemoveAllListeners();
+            close.onClick.RemoveAllListeners();
             BestiaryBook.OnFrogCollect -= ShakeBook;
+            PhoneController.Instance.PhoneUp -= PhoneUp;
+            PhoneController.Instance.Shoot -= PhoneDown;
         }
+
+        void PhoneUp() => isPhoneUp = true;
+        void PhoneDown() => isPhoneUp = false;
 
         void ShakeBook() => bookAnim.SetTrigger("Shake");
 
@@ -44,6 +53,8 @@ namespace Code.UI.Book
 
         public void ShowBook(bool isShow)
         {
+            if (isPhoneUp) return;
+
             if (isShow)
                 SoundManager.Instance.Play(SoundType.OpenBook);
             else
