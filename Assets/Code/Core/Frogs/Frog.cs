@@ -28,7 +28,7 @@ namespace Code.Core.Frogs
 
         public async UniTaskVoid Init(FrogSOData soData, bool success = true)
         {
-            SoundManager.Instance.Play(SoundType.Craft);
+            //SoundManager.Instance.Play(SoundType.Craft);
             _spriteRenderer.sprite = soData.Sprite;
             var baseScale = transform.localScale.x;
             transform.DOScale(new Vector3(baseScale * 1.1f, baseScale * 1.1f, baseScale * 1.1f), 0.7f).SetEase(Ease.OutCubic);

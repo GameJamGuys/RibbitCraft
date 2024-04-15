@@ -38,6 +38,7 @@ namespace Code.Core.Pentagram
                 {
                     candle.FireSummon();
                 }
+                SoundManager.Instance.Play(SoundType.FireLight);
                 OnFiveItems?.Invoke();
 
                 return;

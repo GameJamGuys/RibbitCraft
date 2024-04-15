@@ -2063,6 +2063,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8488681867971147407, guid: ad4677825fde166459f86fd27c2811fb, type: 3}
+      propertyPath: m_Volume
+      value: 0.8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2420,6 +2424,10 @@ PrefabInstance:
       propertyPath: pentagram
       value: 
       objectReference: {fileID: 88703217}
+    - target: {fileID: 7893547307250105553, guid: 8968581fa69da47a9b40d167e6dbc834, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

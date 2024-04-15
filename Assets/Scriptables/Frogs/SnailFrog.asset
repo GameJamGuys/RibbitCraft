@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe169d39e9924a1f92acc09968c2ac92, type: 3}
   m_Name: SnailFrog
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: Snail
+  <Name>k__BackingField: "\u0417\u0430\u0432\u0438\u0442\u0443\u0448\u043A\u0430"
   <Description>k__BackingField: "\u041F\u0440\u044B\u0433\u0430\u0435\u0442, \u043D\u043E
     \u043C\u0435\u0434\u043B\u0435\u043D\u043D\u043E"
   <Sprite>k__BackingField: {fileID: 21300000, guid: e077315eebefa4e36bea0306837c6705, type: 3}
-  <Tier>k__BackingField: {fileID: 0}
+  <Tier>k__BackingField: {fileID: 11400000, guid: 988efeeb04185c44ea3345b78a317be0, type: 2}
