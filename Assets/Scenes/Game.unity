@@ -2393,7 +2393,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: dc5fd5c68a02848e48c6a23ae27a6581, type: 3}
     - target: {fileID: 831287248043434057, guid: ad4677825fde166459f86fd27c2811fb, type: 3}
       propertyPath: sounds.sound.Array.size
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 831287248043434057, guid: ad4677825fde166459f86fd27c2811fb, type: 3}
       propertyPath: sounds.sound.Array.data[15].type
@@ -2404,11 +2404,19 @@ PrefabInstance:
       value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 831287248043434057, guid: ad4677825fde166459f86fd27c2811fb, type: 3}
+      propertyPath: sounds.sound.Array.data[17].type
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 831287248043434057, guid: ad4677825fde166459f86fd27c2811fb, type: 3}
       propertyPath: sounds.sound.Array.data[15].sfx.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 831287248043434057, guid: ad4677825fde166459f86fd27c2811fb, type: 3}
       propertyPath: sounds.sound.Array.data[16].sfx.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 831287248043434057, guid: ad4677825fde166459f86fd27c2811fb, type: 3}
+      propertyPath: sounds.sound.Array.data[17].sfx.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 831287248043434057, guid: ad4677825fde166459f86fd27c2811fb, type: 3}
@@ -2463,6 +2471,10 @@ PrefabInstance:
       propertyPath: sounds.sound.Array.data[16].sfx.Array.data[0]
       value: 
       objectReference: {fileID: 8300000, guid: 5d345a35ab4734ad3878ea34dd2a5ebe, type: 3}
+    - target: {fileID: 831287248043434057, guid: ad4677825fde166459f86fd27c2811fb, type: 3}
+      propertyPath: sounds.sound.Array.data[17].sfx.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 6ed0b3f2a840b412baac2e238cc4cf9f, type: 3}
     - target: {fileID: 1868269277600379495, guid: ad4677825fde166459f86fd27c2811fb, type: 3}
       propertyPath: m_audioClip
       value: 
