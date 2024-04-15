@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe169d39e9924a1f92acc09968c2ac92, type: 3}
   m_Name: GipnoFrog
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: "\u0413\u0438\u043F\u043D\u043E\u0436\u0430\u0431"
-  <Description>k__BackingField: "\u041D\u0435 \u0441\u043C\u043E\u0442\u0440\u0438
-    \u0434\u043E\u043B\u0433\u043E \u0432 \u0433\u043B\u0430\u0437\u0430"
+  <Name>k__BackingField: Hypnofrog
+  <Description>k__BackingField: Don't make long eye contact
   <Sprite>k__BackingField: {fileID: 21300000, guid: 02e5449c96279460f89a79ac4a92a9cc, type: 3}
   <Tier>k__BackingField: {fileID: 11400000, guid: 33080568289d5984cab17271cb4a11cc, type: 2}

@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe169d39e9924a1f92acc09968c2ac92, type: 3}
   m_Name: AmberFrog
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: "\u042F\u043D\u0442\u0430\u0440\u043A\u0430"
-  <Description>k__BackingField: "\u0411\u043B\u0438\u043D, \u0447\u0443\u0432\u0430\u043A,
-    \u0441\u043B\u0438\u0448\u043A\u043E\u043C \u043C\u043D\u043E\u0433\u043E \u044F\u043D\u0442\u0430\u0440\u044F "
+  <Name>k__BackingField: Amber
+  <Description>k__BackingField: 'Damn, man, too much amber. '
   <Sprite>k__BackingField: {fileID: 21300000, guid: 278c9ca90332941a7a69e773fecc47b9, type: 3}
   <Tier>k__BackingField: {fileID: 11400000, guid: 62a0a95c7f0107a4c89c50144dd0b1ab, type: 2}
