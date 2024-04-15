@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: BlueFrog
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Blueberry
-  <Description>k__BackingField: We guarantee it's completely non-GMO
+  <Description>k__BackingField: It's completely non-GMO
   <Sprite>k__BackingField: {fileID: 21300000, guid: f445008845efd40beb1f109c2e0ce70b, type: 3}
   <Tier>k__BackingField: {fileID: 11400000, guid: 62a0a95c7f0107a4c89c50144dd0b1ab, type: 2}
