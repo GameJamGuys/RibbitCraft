@@ -1,4 +1,5 @@
 using System;
+using _Code.Core;
 using _Code.Utils;
 using Cysharp.Threading.Tasks;
 using DG.Tweening;
@@ -35,10 +36,12 @@ namespace Code.Core.Likes
 
         public async UniTask Shot()
         {
+            SoundManager.instance.Play(SoundType.Camera);
             _target.DOScale(new Vector3(0.9f, 0.9f, 0.9f), 0.2f);
             await UniTask.Delay(TimeSpan.FromSeconds(0.2f));
             _target.DOScale(new Vector3(1f, 1f, 1f), 0.2f);
             await UniTask.Delay(TimeSpan.FromSeconds(0.2f));
+            SoundManager.instance.Play(SoundType.Like);
             Shoot?.Invoke();
         }
 

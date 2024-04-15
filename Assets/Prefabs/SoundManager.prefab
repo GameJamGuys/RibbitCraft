@@ -226,6 +226,12 @@ MonoBehaviour:
     - type: 14
       sfx:
       - {fileID: 8300000, guid: 531cbb6fc749fe74cb0cbacf85634d6c, type: 3}
+    - type: 19
+      sfx:
+      - {fileID: 8300000, guid: 6ed0b3f2a840b412baac2e238cc4cf9f, type: 3}
+    - type: 16
+      sfx:
+      - {fileID: 8300000, guid: f2900e03f4b910d4e8c0995a9ff82238, type: 3}
   sfxSource: {fileID: 8488681867971147407}
 --- !u!82 &8488681867971147407
 AudioSource:

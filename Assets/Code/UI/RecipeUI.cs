@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using _Code.Core;
 using UnityEngine;
 using UnityEngine.UI;
 using Code.Core.Bestiary;
@@ -45,6 +46,7 @@ namespace Code.UI.Book
         {
             if (LikesSystem.Likes >= recipe.price)
             {
+                SoundManager.Instance.Play(SoundType.Like);
                 LikesSystem.Likes -= recipe.price;
                 BestiaryBook.CollectRecipe(recipe);
                 CheckRecipeToShow();
