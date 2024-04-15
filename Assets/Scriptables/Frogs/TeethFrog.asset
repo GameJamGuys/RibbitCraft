@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe169d39e9924a1f92acc09968c2ac92, type: 3}
   m_Name: TeethFrog
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: toothy toady
+  <Name>k__BackingField: Toothy toady
   <Description>k__BackingField: The fear of all dentists
   <Sprite>k__BackingField: {fileID: 21300000, guid: fd9f33d5dec234c0e9ffcde3e66c0836, type: 3}
   <Tier>k__BackingField: {fileID: 11400000, guid: 33080568289d5984cab17271cb4a11cc, type: 2}
