@@ -13,6 +13,8 @@ namespace Code.Core.Frogs
     {
         [SerializeField] private SpriteRenderer _spriteRenderer;
         private bool _canCollect;
+
+        [SerializeField] GameObject hearts;
         
         private FrogSOData _data;
 
@@ -52,10 +54,14 @@ namespace Code.Core.Frogs
 
         private async UniTaskVoid DestroyFrog()
         {
+            hearts.SetActive(true);
+            await UniTask.Delay(TimeSpan.FromSeconds(.5f));
             BestiaryBook.CollectFrog(_data);
             transform.DOScale(Vector3.zero, 0.3f).SetEase(Ease.InCirc);
             await UniTask.Delay(TimeSpan.FromSeconds(1f));
+            hearts.SetActive(false);
             LikesSystem.Likes += Random.Range(_data.Tier.LikesMin, _data.Tier.LikesMax + 1);
+            await UniTask.Delay(TimeSpan.FromSeconds(1.2f));
             Destroy(gameObject);
         }
     }

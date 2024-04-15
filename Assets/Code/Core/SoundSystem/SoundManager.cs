@@ -47,8 +47,11 @@ namespace _Code.Core
         UnlockNewComponent,
         Teeth,
         ClickButton,
-        UnfocusButton
-        
+        UnfocusButton,
+        Camera,
+        Pen,
+        Bones,
+        Like
     }
     public class SoundManager : SingletonMono<SoundManager>
     {

@@ -18,6 +18,6 @@ MonoBehaviour:
   ingredients:
   - {fileID: 11400000, guid: 2bc1c464bbc7ace42b3da2530ba2b6a7, type: 2}
   - {fileID: 11400000, guid: 2bc1c464bbc7ace42b3da2530ba2b6a7, type: 2}
-  - {fileID: 11400000, guid: 5d1c08feb491dbc47bab94c20f806d34, type: 2}
-  - {fileID: 11400000, guid: 5d1c08feb491dbc47bab94c20f806d34, type: 2}
+  - {fileID: 11400000, guid: 11a70f37fa9ebf54a8238d8da65afa0e, type: 2}
+  - {fileID: 11400000, guid: 217b1bf6603f0c44aa70a2d3629b81a1, type: 2}
   - {fileID: 11400000, guid: b35d3cfe79ef1a641b9250fe7b741329, type: 2}

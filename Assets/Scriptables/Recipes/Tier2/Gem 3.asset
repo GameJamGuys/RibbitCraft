@@ -16,8 +16,8 @@ MonoBehaviour:
   SavingName: Gem3
   frogData: {fileID: 11400000, guid: 88b7c9ff06078437fa4dd4788b10e86e, type: 2}
   ingredients:
+  - {fileID: 11400000, guid: 02185e8089a2f7f4eb8ca469c74d66d2, type: 2}
   - {fileID: 11400000, guid: 2bc1c464bbc7ace42b3da2530ba2b6a7, type: 2}
-  - {fileID: 11400000, guid: 8883aaa1fea98fa4eb2ea56dda56f5c9, type: 2}
-  - {fileID: 11400000, guid: 8883aaa1fea98fa4eb2ea56dda56f5c9, type: 2}
   - {fileID: 11400000, guid: 217b1bf6603f0c44aa70a2d3629b81a1, type: 2}
-  - {fileID: 11400000, guid: 217b1bf6603f0c44aa70a2d3629b81a1, type: 2}
+  - {fileID: 11400000, guid: 11a70f37fa9ebf54a8238d8da65afa0e, type: 2}
+  - {fileID: 11400000, guid: b35d3cfe79ef1a641b9250fe7b741329, type: 2}
