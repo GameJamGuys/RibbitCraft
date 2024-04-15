@@ -12,6 +12,7 @@ namespace Code.Core.Likes
     {
         [SerializeField] private Animator _animator;
         [SerializeField] private Transform _target;
+        private bool shot;
 
         public event Action PhoneUp;
         public event Action Shoot;
@@ -25,17 +26,22 @@ namespace Code.Core.Likes
 
         public void ShowPhone()
         {
+            shot = true;
             PhoneUp?.Invoke();
             _animator.SetTrigger("OnShow");
         }
         
         public void HidePhone()
         {
+            shot = false;
             _animator.SetTrigger("OnHide");
         }
 
         public async UniTask Shot()
         {
+            if(!shot)
+                return;
+            shot = false;
             SoundManager.instance.Play(SoundType.Camera);
             _target.DOScale(new Vector3(0.9f, 0.9f, 0.9f), 0.2f);
             await UniTask.Delay(TimeSpan.FromSeconds(0.2f));
