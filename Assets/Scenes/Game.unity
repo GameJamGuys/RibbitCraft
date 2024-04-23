@@ -1809,6 +1809,10 @@ PrefabInstance:
       propertyPath: bookAnim
       value: 
       objectReference: {fileID: 371158025}
+    - target: {fileID: 3723496051785002882, guid: cd1e062df84c842b5ad4131070ded751, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3924329831877801837, guid: cd1e062df84c842b5ad4131070ded751, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -5668,9 +5672,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 1267645456}
     m_Modifications:
     - target: {fileID: 222004494230323188, guid: 3c6801d7491ff47b789133414bdbdcd7, type: 3}
+      propertyPath: _isLocked
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 222004494230323188, guid: 3c6801d7491ff47b789133414bdbdcd7, type: 3}
       propertyPath: beastBookController
       value: 
       objectReference: {fileID: 836311399}
+    - target: {fileID: 2278516567663065771, guid: 3c6801d7491ff47b789133414bdbdcd7, type: 3}
+      propertyPath: _isLocked
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2278516567663065771, guid: 3c6801d7491ff47b789133414bdbdcd7, type: 3}
       propertyPath: beastBookController
       value: 
@@ -5680,17 +5692,33 @@ PrefabInstance:
       value: Ingredients
       objectReference: {fileID: 0}
     - target: {fileID: 4805496730882510619, guid: 3c6801d7491ff47b789133414bdbdcd7, type: 3}
+      propertyPath: _isLocked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805496730882510619, guid: 3c6801d7491ff47b789133414bdbdcd7, type: 3}
       propertyPath: beastBookController
       value: 
       objectReference: {fileID: 836311399}
+    - target: {fileID: 4822885238232656966, guid: 3c6801d7491ff47b789133414bdbdcd7, type: 3}
+      propertyPath: _isLocked
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4822885238232656966, guid: 3c6801d7491ff47b789133414bdbdcd7, type: 3}
       propertyPath: beastBookController
       value: 
       objectReference: {fileID: 836311399}
     - target: {fileID: 5315098182160897316, guid: 3c6801d7491ff47b789133414bdbdcd7, type: 3}
+      propertyPath: _isLocked
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5315098182160897316, guid: 3c6801d7491ff47b789133414bdbdcd7, type: 3}
       propertyPath: beastBookController
       value: 
       objectReference: {fileID: 836311399}
+    - target: {fileID: 5318677419870683383, guid: 3c6801d7491ff47b789133414bdbdcd7, type: 3}
+      propertyPath: _isLocked
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5318677419870683383, guid: 3c6801d7491ff47b789133414bdbdcd7, type: 3}
       propertyPath: beastBookController
       value: 
@@ -5703,6 +5731,10 @@ PrefabInstance:
       propertyPath: beastBookController
       value: 
       objectReference: {fileID: 836311399}
+    - target: {fileID: 6829437757723723704, guid: 3c6801d7491ff47b789133414bdbdcd7, type: 3}
+      propertyPath: _isLocked
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6829437757723723704, guid: 3c6801d7491ff47b789133414bdbdcd7, type: 3}
       propertyPath: beastBookController
       value: 

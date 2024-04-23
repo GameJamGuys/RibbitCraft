@@ -65,7 +65,7 @@ namespace Code.UI.Book
             else
             {
                 price.text = recipe.price.ToString();
-                buyBtn.gameObject.SetActive(true);
+                //buyBtn.gameObject.SetActive(true);
             }
         }
 
